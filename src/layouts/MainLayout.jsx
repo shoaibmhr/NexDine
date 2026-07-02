@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Sidebar from "../components/layout/Sidebar";
 import Navbar from "../components/layout/Navbar";
 
@@ -10,10 +11,7 @@ const MainLayout = () => {
         <Navbar />
 
         <main className="flex-1 overflow-y-auto p-7">
-          <h1 className="text-3xl font-bold">Dashboard</h1>
-          <p className="text-gray-500 mt-2">
-            Welcome to NexDine Restaurant Management System
-          </p>
+          <Outlet />
         </main>
       </div>
     </div>
