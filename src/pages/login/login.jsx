@@ -15,7 +15,7 @@ const Login = () => {
       {/* LEFT SIDE */}
       <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
         <div className="w-full max-w-md">
-
+<h2>hdhhshs</h2>
           {/* Logo */}
           <div className="flex items-center gap-3 mb-12">
             <div className="w-11 h-11 rounded-full bg-orange-500 flex items-center justify-center text-white">
