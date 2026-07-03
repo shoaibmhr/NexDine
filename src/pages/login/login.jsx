@@ -1,25 +1,16 @@
 import React from "react";
-import {
-  Mail,
-  Lock,
-  Eye,
-  ArrowRight,
-  Flame,
-  CheckCircle,
-} from "lucide-react";
+import { Mail, Lock, Eye, ArrowRight, Flame, CheckCircle } from "lucide-react";
 
 const Login = () => {
   return (
     <div className="min-h-screen flex bg-white">
-
       {/* LEFT SIDE */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-10">
+      <div className="w-full lg:w-1/2 flex items-center justify-center px-10">
         <div className="w-full max-w-md">
-<h2>hdhhshs</h2>
           {/* Logo */}
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-11 h-11 rounded-full bg-orange-500 flex items-center justify-center text-white">
-              <Flame size={20} />
+          <div className="flex items-center gap-3 mb-10">
+            <div className="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center text-white">
+              <Flame size={28} />
             </div>
 
             <div>
@@ -31,9 +22,7 @@ const Login = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl font-bold text-gray-900">
-            Welcome back 
-          </h1>
+          <h1 className="text-4xl font-bold text-gray-900">Welcome back</h1>
 
           <p className="text-gray-500 mt-2 mb-8">
             Sign in to manage your restaurant operations.
@@ -41,9 +30,7 @@ const Login = () => {
 
           {/* Email */}
           <div className="mb-5">
-            <label className="text-sm font-medium text-gray-700">
-              Email
-            </label>
+            <label className="text-sm font-medium text-gray-700">Email</label>
 
             <div className="mt-2 flex items-center border rounded-full px-4 py-3 focus-within:border-orange-500">
               <Mail className="text-gray-400" size={18} />
@@ -77,10 +64,7 @@ const Login = () => {
                 className="w-full ml-3 outline-none"
               />
 
-              <Eye
-                className="text-gray-400 cursor-pointer"
-                size={18}
-              />
+              <Eye className="text-gray-400 cursor-pointer" size={18} />
             </div>
           </div>
 
@@ -113,16 +97,14 @@ const Login = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="hidden lg:flex w-1/2 relative  justify-center bg-gradient-to-br from-orange-100 via-white to-orange-100">
-
+      <div className="hidden lg:flex w-1/2 justify-center items-center bg-gradient-to-br from-orange-100 via-white to-orange-100 px-10">
         <div className="text-center max-w-lg">
-
           {/* Image */}
-          <div className="bg-white shadow-xl p-8 mt-10 rounded-sm ">
+          <div className="bg-white shadow-xl p-8 rounded-3xl">
             <img
               src="/restaurant.png"
               alt="Restaurant"
-              className="w-[340px]"
+              className="w-[340px] mx-auto"
             />
           </div>
 
@@ -132,39 +114,29 @@ const Login = () => {
           </h2>
 
           <p className="text-gray-500 mt-4 leading-7">
-            From POS to kitchen, reservations to reports —
-            everything you need in one premium dashboard.
+            From POS to kitchen, reservations to reports — everything you need
+            in one premium dashboard.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-5 mt-10">
-
             <div className="bg-white rounded-2xl shadow p-5">
               <h3 className="font-bold text-3xl">12K+</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                Restaurants
-              </p>
+              <p className="text-sm text-gray-500 mt-1">Restaurants</p>
             </div>
 
             <div className="bg-white rounded-2xl shadow p-5">
               <h3 className="font-bold text-3xl">4.9★</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                Average Rating
-              </p>
+              <p className="text-sm text-gray-500 mt-1">Average Rating</p>
             </div>
 
             <div className="bg-white rounded-2xl shadow p-5">
               <h3 className="font-bold text-3xl">99.9%</h3>
-              <p className="text-sm text-gray-500 mt-1">
-                Uptime
-              </p>
+              <p className="text-sm text-gray-500 mt-1">Uptime</p>
             </div>
-
           </div>
-
         </div>
       </div>
-
     </div>
   );
 };
