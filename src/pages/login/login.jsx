@@ -1,4 +1,3 @@
-import React from "react";
 import { Mail, Lock, Eye, ArrowRight, Flame, CheckCircle } from "lucide-react";
 
 const Login = () => {
@@ -99,7 +98,6 @@ const Login = () => {
       {/* RIGHT SIDE */}
       <div className="hidden lg:flex w-1/2 justify-center items-center bg-gradient-to-br from-orange-100 via-white to-orange-100 px-10">
         <div className="text-center max-w-lg">
-          {/* Image */}
           <div className="bg-white shadow-xl p-8 rounded-3xl">
             <img
               src="/restaurant.png"
@@ -108,7 +106,6 @@ const Login = () => {
             />
           </div>
 
-          {/* Text */}
           <h2 className="text-4xl font-bold mt-10 text-gray-900">
             Run your restaurant with confidence
           </h2>
@@ -118,7 +115,6 @@ const Login = () => {
             in one premium dashboard.
           </p>
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-5 mt-10">
             <div className="bg-white rounded-2xl shadow p-5">
               <h3 className="font-bold text-3xl">12K+</h3>
