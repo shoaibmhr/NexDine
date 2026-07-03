@@ -2,9 +2,9 @@ import { Mail, Lock, Eye, ArrowRight, Flame, CheckCircle } from "lucide-react";
 
 const Login = () => {
   return (
-    <div className="min-h-screen flex bg-white">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-white">
       {/* LEFT SIDE */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center px-10">
+      <div className="w-full lg:w-1/2 flex items-center justify-center px-6 sm:px-8 lg:px-12 py-10">
         <div className="w-full max-w-md">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-10">
@@ -21,7 +21,9 @@ const Login = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl font-bold text-gray-900">Welcome back</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            Welcome back
+          </h1>
 
           <p className="text-gray-500 mt-2 mb-8">
             Sign in to manage your restaurant operations.
@@ -87,7 +89,7 @@ const Login = () => {
 
           {/* Bottom */}
           <p className="text-center text-sm text-gray-500 mt-8">
-            New to Saveur?{" "}
+            New to Saveur{" "}
             <span className="text-orange-500 font-semibold cursor-pointer">
               Request a demo
             </span>
@@ -96,13 +98,13 @@ const Login = () => {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="hidden lg:flex w-1/2 justify-center items-center bg-gradient-to-br from-orange-100 via-white to-orange-100 px-10">
+      <div className="hidden lg:flex lg:w-1/2 justify-center items-center bg-gradient-to-br from-orange-100 via-white to-orange-100 px-10">
         <div className="text-center max-w-lg">
           <div className="bg-white shadow-xl p-8 rounded-3xl">
             <img
               src="/restaurant.png"
               alt="Restaurant"
-              className="w-[340px] mx-auto"
+              className="w-full max-w-[340px] mx-auto"
             />
           </div>
 
