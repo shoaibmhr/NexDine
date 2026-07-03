@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Search, Download, Plus, SlidersHorizontal } from "lucide-react";
+import { Plus, SlidersHorizontal } from "lucide-react";
 
-const ordersData = [
+const Reservation = [
   {
     id: "#ORD-10284",
     customer: "Sophia Martin",
@@ -105,10 +105,10 @@ const Orders = () => {
 
       <div className="flex justify-between items-center flex-wrap gap-4">
         <div>
-          <h1 className="text-4xl font-bold">Orders</h1>
+          <h1 className="text-4xl font-bold">Reservation</h1>
 
           <p className="text-gray-500 mt-1">
-            All orders across dine-in, takeaway and delivery.
+            Upcoming and recent table bookings.
           </p>
         </div>
 
@@ -130,36 +130,7 @@ const Orders = () => {
       <div className="bg-white rounded-3xl shadow mt-8 overflow-hidden">
         {/* Top */}
 
-        <div className="flex flex-wrap gap-4 justify-between p-5 border-b">
-          {/* Search */}
-
-          <div className="flex items-center border rounded-xl px-4 py-3 w-full lg:w-[60%]">
-            <Search size={18} className="text-gray-500" />
-
-            <input
-              type="text"
-              placeholder="Search orders, customers..."
-              className="outline-none ml-3 w-full"
-            />
-          </div>
-
-          <div className="flex gap-3">
-            <button className="flex items-center gap-2 border rounded-xl px-5">
-              <SlidersHorizontal size={18} />
-              Filter
-            </button>
-
-            <button className="px-4 py-2 rounded-xl bg-orange-500 text-white">
-              All
-            </button>
-
-            <button>Dine In</button>
-
-            <button>Takeaway</button>
-
-            <button>Delivery</button>
-          </div>
-        </div>
+       
 
         {/* Table */}
 
@@ -167,14 +138,14 @@ const Orders = () => {
           <table className="w-full">
             <thead className="bg-gray-50 text-gray-600">
               <tr>
-                <th className="text-left p-5">ORDER ID</th>
-                <th className="text-left">CUSTOMER</th>
-                <th className="text-left">TABLE</th>
-                <th className="text-left">ITEMS</th>
-                <th className="text-left">TYPE</th>
-                <th className="text-left">AMOUNT</th>
+                <th className="text-left p-5">Customer</th>
+                <th className="text-left">Phone</th>
+                <th className="text-left">Guest</th>
+                <th className="text-left">Date</th>
+                <th className="text-left">Time</th>
+                <th className="text-left">Table</th>
                 <th className="text-left">STATUS</th>
-                <th className="text-left">TIME</th>
+               
               </tr>
             </thead>
             <tbody>
@@ -224,4 +195,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default Reservation;
